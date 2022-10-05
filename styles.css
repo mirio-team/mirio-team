@@ -182,6 +182,7 @@ header {
     font-weight: 600;
     letter-spacing: -0.5px;
     margin-bottom: 16px;
+    opacity: 0.75;
 }
 
 .sign-up p {
@@ -205,6 +206,9 @@ header {
 .sign-up-right {
     padding: 36px 0 0 40px;
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .screenshot {
@@ -246,4 +250,116 @@ footer a {
 
 .img-logo:hover {
     transform: rotate(180deg);
+}
+
+@media (max-width: 880px) {
+    h1 {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: -2.25px;
+    }
+
+    .editor {
+        margin-bottom: 16px;
+    }
+
+    .features {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .features p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .students, .teachers {
+        padding: 28px 32px;
+    }
+
+    .sign-up p {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        letter-spacing: -0.75px;
+    }
+
+    .sign-up-left {
+        padding: 28px 32px;
+    }
+
+    .sign-up-right {
+        padding: 28px 0 0 32px;
+    }
+}
+
+  @media (max-width: 720px) {
+    header {
+        padding: 16px;
+    }
+
+    .hero {
+        margin-top: 136px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .editor {
+        margin-bottom: 8px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .sign-up {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .sign-up-right {
+        max-width: 560px;
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 516px) {
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -1.75px;
+    }
+
+    .students, .teachers {
+        padding: 20px 24px;
+    }
+
+    .sign-up p {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        letter-spacing: -0.75px;
+    }
+
+    .sign-up-left {
+        padding: 20px 24px;
+    }
+
+    .sign-up-right {
+        padding: 20px 0 0 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.5px;
+    }
 }
