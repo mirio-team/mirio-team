@@ -1,0 +1,249 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;;
+    color: #000;
+    font-weight: 500;
+    background: #fff;
+    letter-spacing: -0.25px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -2.25px;
+    font-weight: 700;
+}
+
+a {
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+main {
+    background: linear-gradient(#fff 0%, #eee 30%);
+}
+
+.container {
+    max-width: 1128px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(16px);
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.logotype {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-signup {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.header-signup a {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 6px 8px;
+    font-weight: 600;
+    color: #000;
+    background: rgba(0,0,0,0.08);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    max-width: 960px;
+    margin: 192px auto 96px;
+}
+
+.hero p {
+    line-height: 28px;
+    max-width: 640px;
+    margin: 24px auto 40px;
+}
+
+.hero a {
+    text-decoration: none;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border-radius: 16px;
+    color: #fff;
+    background: linear-gradient(-45deg, #e65c32, #d62a6c, #1084af, #0fab86);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.placeholder {
+    display: none;
+}
+
+.editor {
+    width: 100%;
+    height: 640px;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.features {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.students, .teachers {
+    padding: 36px 40px 44px;
+    border-radius: 24px;
+    overflow: hidden;
+    flex: 1;
+    background: #fff;
+}
+
+.teachers {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.features p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    margin-bottom: 16px;
+}
+
+.features h2 {
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.sign-up {
+    background: linear-gradient(-45deg, #e65c32, #d62a6c, #1084af, #0fab86);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-radius: 24px;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+
+.sign-up-left {
+    padding: 36px 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sign-up h2 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.sign-up p {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: -1.25px;
+    margin-bottom: 24px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border-radius: 16px;
+    background: #fff;
+    color: #000;
+}
+
+.sign-up-right {
+    padding: 36px 0 0 40px;
+    flex: 2;
+}
+
+.screenshot {
+    border-top-left-radius: 8px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    margin-top: 64px;
+    padding: 24px 24px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+footer img {
+    height: 24px;
+    width: 24px;
+}
+
+footer p {
+    flex: 1;
+    text-align: right;
+}
+
+footer a {
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+}
+
+.img-logo {
+    transition: transform 1.5s ease-in-out;
+}
+
+.img-logo:hover {
+    transform: rotate(180deg);
+}
