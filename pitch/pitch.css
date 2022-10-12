@@ -1,0 +1,257 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    background: #fff;
+    letter-spacing: -0.5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    //background: #fff;
+    font-size: 16px;
+}
+
+main {
+    background: linear-gradient(#fff 0%, #eee 30%);
+}
+
+.logo {
+    height: 24px;
+}
+
+.img-logo {
+    height: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    background: linear-gradient(-45deg, #e65c32, #d62a6c, #1084af, #0fab86);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+.p-small {
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    opacity: 0.6;
+}
+
+ol {
+    padding-left: 24px;
+}
+
+ol li {
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+ol li::marker {
+    margin-right: 4px;
+}
+
+a {
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+main {
+    padding: 160px 24px 80px;
+}
+
+.slide {
+    max-width: 1280px;
+    padding: 32px;
+    min-height: 480px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    //border: solid 1px rgba(0,0,0,0.12);
+}
+
+.container {
+    max-width: 880px;
+    //margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    gap: 48px;
+}
+
+.column-1 {
+    flex: 1;
+}
+
+.column-2 {
+    flex: 2;
+}
+
+.screenshot {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    padding: 8px 0 0 8px;
+    background: #eee;
+}
+
+.quote {
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    //background: #eee;
+    border: solid 1px rgba(0,0,0,0.12);
+}
+
+.quote p {
+    margin-bottom: 8px;
+}
+
+.quote .attribution {
+    font-size: 16px;
+    margin-bottom: 0;
+    opacity: 0.7;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.attribution-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    background: linear-gradient(-45deg, #e65c32, #d62a6c, #1084af, #0fab86);
+	background-size: 150% 150%;
+    background-position: center;
+}
+
+.asterisk {
+    opacity: 0.5;
+}
+
+/* .text-teachers {
+    background: -webkit-linear-gradient(-45deg, #e65c32, #d62a6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-learners {
+    background: -webkit-linear-gradient(-45deg, #1084af, #0fab86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.demo-video {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Individual Slides */
+
+#title {
+    //padding-top: 80px;
+    min-height: 0;
+    padding-bottom: 0;
+    background: rgba(0,0,0,0.08);
+    border-color: #eee;
+    //border: none;
+    //text-align: center;
+    color: #fff;
+    background: linear-gradient(-45deg, #e65c32, #d62a6c, #1084af, #0fab86);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+}
+
+#title .container {
+    max-width: none;
+}
+
+#title .column-2 {
+    margin-right: -32px;
+}
+
+#title .hero {
+    border-top-left-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.logo-title {
+    margin: 8px 0 20px;
+    height: 32px;
+    filter: invert(1);
+}
+
+#solution {
+    //background: #eee;
+}
+
+#solution .columns {
+    gap: 24px;
+}
+
+
+#solution .slide {
+    min-height: 0;
+    padding: 32px 32px 24px;
+    border-radius: 16px;
+    //background-color: #eee;
+    border: solid 1px rgba(0,0,0,0.15);
+}
+
+.slide .slide h2 {
+    //font-size: 18px;
+    //line-height: 24px;
+    //letter-spacing: -0.35px;
+}
+
+.slide .slide ol li {
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
